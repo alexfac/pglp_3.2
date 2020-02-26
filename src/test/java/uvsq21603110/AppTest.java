@@ -9,7 +9,13 @@ public class AppTest
 {
     @Test
     public void createEmploye(){
-        CalculSalaire e = new CalculSalaire("Bob","2 rue");
-        assertTrue(e.CalculSalaire() == 1500);
+        Employe e = new Employe("Bob","2 rue", 2);
+        assertTrue(e != null);
+    }
+
+    @Test
+    public void verifsalaireEmploye(){
+        Employe e = new Employe("Bob","2 rue", 2);
+        assertTrue(e.CalculSalaire() == 1540);
     }
 }
