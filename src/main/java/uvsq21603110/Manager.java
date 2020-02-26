@@ -15,6 +15,6 @@ public class Manager extends AbstractEmploye{
 
     @Override
     public double CalculSalaire(){
-        return 1500 + 100*this.E.size();
+        return super.CalculSalaire() + 100*this.E.size();
     }
 }

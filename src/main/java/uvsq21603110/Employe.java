@@ -14,6 +14,6 @@ public class Employe extends AbstractEmploye {
 
     @Override
     public double CalculSalaire(){
-        return 1500 + 20 * anciennete;
+        return super.CalculSalaire() + 20 *anciennete;
     }
 }

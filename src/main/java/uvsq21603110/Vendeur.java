@@ -14,6 +14,6 @@ public class Vendeur extends AbstractEmploye{
 
     @Override
     public double CalculSalaire(){
-        return 1500 + commission;
+        return super.CalculSalaire() + commission;
     }
 }
